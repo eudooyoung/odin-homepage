@@ -4,6 +4,7 @@ installed packages are as follows:
 
 - webpack-cli
 - html-webpack-plugin
+- html-loader
 - style-loader
 - css-loader
 - webpack-dev-server
