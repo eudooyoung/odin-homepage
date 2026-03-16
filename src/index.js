@@ -1,1 +1,1 @@
-console.log("Hello npm!");
+import "./style.css";

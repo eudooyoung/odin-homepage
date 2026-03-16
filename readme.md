@@ -1,4 +1,10 @@
+# Odin Homepage Project
+
+## How to use
+
 After clone this repository, command "npm install" to install packages.
+
+## Packages
 
 installed packages are as follows:
 
@@ -15,9 +21,16 @@ installed packages are as follows:
 - jest
 - babel
 
-npm scripts are added:
+## NPM srcipts
 
 - build: execute npx with config in production mode
 - dev: execute npx with config in development mode
 - deploy: execute git command for deploying
 - test: run jest
+
+## references
+
+- Nunito font from [Google Fonts](https://fonts.google.com/specimen/Nunito/license?categoryFilters=Feeling:%2FExpressive%2FRugged)
+- Placeholder image by [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PlaceholderLC.png#filelinks)
+- Email, Open-in-new and Phone svgs by [Pricogrammers](https://pictogrammers.com/library/mdi/)
+- Blog svg by [Icooon Mono](https://icooon-mono.com/?ref=svgrepo.com) in PD License via [SVG Repo](https://www.svgrepo.com/)
