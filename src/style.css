@@ -1,6 +1,11 @@
 :root {
   --header-background: #0891b2;
   --profile-description-background: #f1f1f1;
+  --box-shadow-light: 0 3px 7px #c0c0c0;
+  --box-shadow-dark: 0 1px 4px #4c4c4c;
+  --font-header: "Playfair Display", serif;
+  --font-paragraph: "Nunito", sans-serif;
+  --text-shadow: 0 2px 2px #8c8c8c;
 }
 
 * {
@@ -10,7 +15,7 @@
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-paragraph);
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 1.5rem;
@@ -24,7 +29,7 @@ body {
 
 header {
   background-color: var(--header-background);
-  box-shadow: 0 3px 7px #808080;
+  box-shadow: var(--box-shadow-light);
 
   transform: skewY(-13deg);
   transform-origin: 0 0;
@@ -37,7 +42,7 @@ header {
 
 .profile-container {
   place-self: center;
-  box-shadow: 0 3px 3px #c0c0c0;
+  box-shadow: var(--box-shadow-dark);
   z-index: 1;
 
   transform: skewY(13deg);
@@ -53,6 +58,11 @@ header {
 
 h1 {
   place-self: center;
+
+  font-family: var(--font-header);
+  color: white;
+  text-shadow: var(--text-shadow);
+  font-weight: 500;
 }
 
 .profile-description {
@@ -60,10 +70,38 @@ h1 {
 
   padding: 10px 30px;
   background-color: var(--profile-description-background);
-  box-shadow: 0 3px 3px #c0c0c0;
+  box-shadow: var(--box-shadow-dark);
 
   transform: translateY(100px) skewY(13deg);
   transform-origin: 0 0;
+}
+
+.profile-description > * {
+  margin: 30px 10px;
+}
+
+h2 {
+  font-family: var(--font-header);
+  font-weight: 600;
+}
+
+.profile-description p {
+  font-size: 1.3rem;
+}
+
+.profile-description .link-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+
+.link-container * {
+  max-width: 30px;
+}
+
+.link-container a {
+  display: contents;
 }
 
 main {
