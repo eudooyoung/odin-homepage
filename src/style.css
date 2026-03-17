@@ -1,8 +1,8 @@
 :root {
   --header-background: #0891b2;
-  --profile-description-background: #f1f1f1;
+  --profile-description-background: #fff;
   --box-shadow-light: 0 3px 7px #c0c0c0;
-  --box-shadow-dark: 0 1px 4px #4c4c4c;
+  --box-shadow-dark: 0 3px 7px #4c4c4c;
   --font-header: "Playfair Display", serif;
   --font-paragraph: "Nunito", sans-serif;
   --text-shadow: 0 2px 2px #8c8c8c;
@@ -24,7 +24,7 @@ body {
   max-width: 70dvw;
 
   display: grid;
-  grid-template-rows: 650px 1100px 450px;
+  grid-template-rows: 650px 1000px 450px;
 }
 
 header {
@@ -105,7 +105,36 @@ h2 {
 }
 
 main {
-  background-color: #5f9ea0;
+  margin: 75px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.project-container {
+  flex: 1;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.project-card {
+  box-shadow: var(--box-shadow-light);
+  padding: 20px;
+
+  display: grid;
+}
+
+h3 {
+  font-family: var(--font-header);
+  font-size: 1.3rem;
+  /* font-weight: 400; */
+}
+
+.project-card > img {
+  max-width: 100%;
 }
 
 footer {
