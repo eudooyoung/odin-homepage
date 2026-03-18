@@ -27,7 +27,7 @@ body {
   max-width: 70dvw;
 
   display: grid;
-  grid-template-rows: 650px 1000px 450px;
+  grid-template-rows: 650px auto 450px;
 }
 
 header {
@@ -108,7 +108,7 @@ h2 {
 }
 
 main {
-  margin: 75px;
+  margin: 75px 50px;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -120,24 +120,27 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 30px;
+  gap: 50px;
 }
 
 .project-card {
-  box-shadow: var(--box-shadow-light);
-  padding: 20px 30px;
+  box-shadow: var(--box-shadow-dark);
+  padding: 20px;
 
   display: grid;
   grid-template-areas:
     "project-img project-img"
     "project-name project-links"
     "project-description project-description";
+  grid-template-rows: 200px 40px 60px;
 }
 
 .project-card > img {
   grid-area: project-img;
+  justify-self: center;
 
   max-width: 100%;
+  object-fit: contain;
 }
 
 h3 {
@@ -158,6 +161,7 @@ h3 {
 
 .project-description {
   grid-area: project-description;
+  align-self: start;
 
   font-size: var(--font-size-small);
 }
