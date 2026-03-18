@@ -34,3 +34,4 @@ installed packages are as follows:
 - Placeholder image by [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PlaceholderLC.png#filelinks)
 - Email, Open-in-new and Phone svgs by [Pricogrammers](https://pictogrammers.com/library/mdi/)
 - Blog svg by [Icooon Mono](https://icooon-mono.com/?ref=svgrepo.com) in PD License via [SVG Repo](https://www.svgrepo.com/)
+- Project placeholder imagge by [Kelly Sikkema](https://unsplash.com/ko/@kellysikkema?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) from [Unsplash](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EB%85%B8%EB%9E%80-%ED%8E%9C-l-lgKl4HNHM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
