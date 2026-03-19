@@ -34,43 +34,47 @@ header {
   background-color: var(--background-color);
   box-shadow: var(--box-shadow-light);
 
-  /* transform: skewY(-13deg);
-  transform-origin: 0 0; */
+  transform: skewY(-13deg);
+  transform-origin: 0 0;
 
   display: grid;
-  place-content: center;
-  justify-items: center;
-  grid-template-columns: 70%;
+  place-items: center;
 }
 
 .profile-container {
-  /* place-self: center; */
-
+  max-height: 60%;
+  max-width: 70%;
   background-color: var(--profile-description-background);
   box-shadow: var(--box-shadow-dark);
-  /* z-index: 1; */
 
-  /* transform: skewY(13deg);
-  transform-origin: 0 0; */
+  transform: skewY(13deg);
+  transform-origin: 0 0;
+
+  /* display: grid;
+  grid-template-columns: repeat(2, min(500px, 50%));
+  grid-template-rows: 100%;
+  justify-content: center;
+  align-items: center; */
+}
+
+.profile-container .image-wrapper {
+  transform: translateY(-10%);
+  float: left;
 
   display: grid;
   /* grid-template-rows: repeat(4, 1fr); */
-  /* grid-template-columns: repeat(2, 500px); */
-  grid-auto-flow: row;
+  /* align-items: center; */
 }
 
-.profile-container img {
-  max-width: 500px;
-}
-
-/*.profile-container img,
-h1 {
+.profile-container .image-wrapper > * {
   grid-column: 1 / 2;
 }
 
-.profile-container img {
-  grid-row: 2 / 4;
-  max-width: 100%;
+.profile-container .image-wrapper img {
+  grid-row: 1 / 4;
+  max-width: 500px;
+  min-width: 400px;
+  box-shadow: var(--box-shadow-dark);
 }
 
 h1 {
@@ -83,18 +87,13 @@ h1 {
   text-shadow: var(--text-shadow);
 }
 
-.profile-description {
-  grid-column: 2 / 3;
-  grid-row: 2 / 4;
-  place-self: center;
-
+.profile-container .description-wrapper {
   padding: 10px 30px;
-  box-shadow: var(--box-shadow-dark);
 
-  transform: translateY(30%) skewY(13deg);
-  transform-origin: 0 0;
+  display: grid;
 }
- .profile-description > * {
+
+.profile-container .description-wrapper > * {
   margin: 30px 10px;
 }
 
@@ -103,18 +102,18 @@ h2 {
   font-weight: 600;
 }
 
-.profile-description p {
+.description-wrapper p {
   font-size: var(--font-size-medium);
 }
 
-.profile-description .link-container {
+.description-wrapper .link-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 25px;
 }
-*/
-.profile-description .link-container * {
+
+.description-wrapper .link-container * {
   max-width: 40px;
 }
 
