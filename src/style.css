@@ -27,7 +27,7 @@ body {
   max-width: calc(1980px * 0.7);
 
   display: grid;
-  grid-template-rows: 650px 1050px 600px;
+  grid-template-rows: 650px auto 600px;
 }
 
 h1 {
@@ -114,17 +114,18 @@ header {
 }
 
 main {
-  margin: 75px 50px;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
 }
 
 .project-container {
+  max-width: 85%;
+  align-self: center;
   flex: 1;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(303px, 1fr));
   grid-template-rows: repeat(2, 1fr);
   gap: 50px;
 }
