@@ -5,7 +5,7 @@
   --box-shadow-dark: 0 3px 7px #4c4c4c;
   --font-header: "Playfair Display", serif;
   --font-paragraph: "Nunito", sans-serif;
-  --font-size-large: 1.3rem;
+  --font-size-large: 1.5rem;
   --font-size-medium: 1.3rem;
   --font-size-small: 1.1rem;
   --text-shadow: 0 2px 2px #3a3a3a;
@@ -89,12 +89,12 @@ header {
 }
 
 .profile-container h2 {
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 .profile-container p {
-  margin-bottom: 15px;
-  padding-top: 15px;
+  margin-bottom: 20px;
+  padding-top: 20px;
   font-size: var(--font-size-medium);
 }
 
@@ -227,11 +227,12 @@ footer .link-container {
 
 @media (max-width: 1200px) {
   .profile-container {
-    transform: translateY(23%) skewY(13deg);
+    transform: translateY(15%) skewY(13deg);
   }
 
   .profile-container .image-wrapper {
-    transform: translateY(-13%) scale(1.2);
+    transform: translateY(-28%) scale(1.2);
+    margin-bottom: -5%;
   }
 
   .profile-container h1 {
