@@ -67,7 +67,7 @@ header {
   transform: scale(1.2);
   margin-right: 75px;
   max-width: 50%;
-  min-width: 430px;
+  /* min-width: 430px; */
   float: left;
 
   display: grid;
@@ -114,9 +114,16 @@ header {
 }
 
 main {
+  margin-top: 50px;
+  margin-bottom: 150px;
+
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+}
+
+main h2 {
+  margin-left: 80px;
 }
 
 .project-container {
@@ -125,7 +132,7 @@ main {
   flex: 1;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(303px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 50px;
 }
@@ -240,5 +247,14 @@ footer .link-container {
     grid-row: 1 / 2;
 
     transform: translateX(95%);
+  }
+
+  main {
+    margin-top: 100px;
+  }
+
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 }
