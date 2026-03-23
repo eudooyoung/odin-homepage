@@ -160,7 +160,8 @@ main h2 {
   place-self: center;
 
   max-width: 100%;
-  max-height: 175px;
+  height: 175px;
+  object-fit: cover;
 }
 
 .project-card h3 {
@@ -282,5 +283,34 @@ footer picture img {
 
   .profile-container h1 {
     transform: translateX(75%);
+  }
+}
+
+@media (max-width: 800px) {
+  .profile-container h1 {
+    transform: translateX(70%);
+  }
+}
+
+@media (max-width: 750px) {
+  .profile-container {
+    /* transform: translateY(30%) skewY(13deg); */
+  }
+
+  .profile-container .image-wrapper {
+    float: none;
+  }
+
+  .profile-container h1 {
+    grid-row: 3 / 4;
+    transform: translateX(0);
+  }
+
+  main {
+    margin-top: 200px;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr;
   }
 }
