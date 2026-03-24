@@ -1,36 +1,16 @@
 # Odin Homepage Project
 
-## How to use
+## purpose
 
-After clone this repository, command "npm install" to install packages.
-
-## Packages
-
-installed packages are as follows:
-
-- webpack-cli
-- html-webpack-plugin
-- html-loader
-- style-loader
-- css-loader
-- webpack-dev-server
-- webpack-merge
-- eslint
-- prettier
-- eslint-config-prettier
-- jest
-- babel
-
-## NPM srcipts
-
-- build: execute npx with config in production mode
-- dev: execute npx with config in development mode
-- deploy: execute git command for deploying
-- test: run jest
+- to implement responsive web page using media queries and responsive image tags
+- from 320px to 600px: mobile view
+- from 601px to 1200px: tablet view
+- wider than 1200px: laptop or desktop view
 
 ## references
 
-- Nunito font from [Google Fonts](https://fonts.google.com/specimen/Nunito/license?categoryFilters=Feeling:%2FExpressive%2FRugged)
+- Header font from [Google Fonts](https://fonts.google.com/specimen/Playfair+Display/license?categoryFilters=Feeling:%2FExpressive%2FRugged)
+- Default font from [Google Fonts](https://fonts.google.com/specimen/Nunito/license?categoryFilters=Feeling:%2FExpressive%2FRugged)
 - Profile placeholder image by [Christin Hume](https://unsplash.com/ko/@christinhumephoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) from [Unsplash](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/person-using-laptop-computer-Hcfwew744z4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 - Email, Open-in-new and Phone svgs by [Pricogrammers](https://pictogrammers.com/library/mdi/)
 - Blog svg by [Icooon Mono](https://icooon-mono.com/?ref=svgrepo.com) in PD License via [SVG Repo](https://www.svgrepo.com/)
