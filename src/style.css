@@ -305,17 +305,16 @@ footer {
 
   .profile-container {
     background-color: transparent;
-    max-width: 95%;
-
+    max-width: 100%;
     box-shadow: none;
-    transform: translateY(15%) skewY(13deg);
+
+    transform: translateY(10%) skewY(13deg);
 
     display: grid;
   }
 
   .profile-container .image-wrapper {
-    justify-self: center;
-
+    margin-right: 0;
     max-width: 100%;
     min-width: 275px;
     transform: translateY(-20%) scale(1);
@@ -336,7 +335,7 @@ footer {
   }
 
   main {
-    margin-top: calc(700px - 50%);
+    margin-top: calc(800px - 70%);
   }
 
   .project-container {
@@ -354,10 +353,6 @@ footer {
 
   .footer-wrapper picture {
     justify-self: center;
-  }
-
-  .footer-wrapper picture img {
-    /* height: 200px; */
   }
 }
 
