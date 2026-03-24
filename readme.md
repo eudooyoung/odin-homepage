@@ -7,6 +7,10 @@
 - from 601px to 1200px: tablet view
 - wider than 1200px: laptop or desktop view
 
+## result
+
+- [Site Link](https://eudooyoung.github.io/odin-homepage/)
+
 ## references
 
 - Header font from [Google Fonts](https://fonts.google.com/specimen/Playfair+Display/license?categoryFilters=Feeling:%2FExpressive%2FRugged)
